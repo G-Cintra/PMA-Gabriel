@@ -1,0 +1,48 @@
+[
+    {
+      "name": "Selic",
+      "Descrição": "Taxa de juros que representa a taxa média ajustada das operações compromissadas com prazo de um dia útil lastreadas com títulos públicos federais custodiados no Sistema Especial de Liquidação e de Custódia (Selic). Divulgação em % a.d.",
+      "code": 11
+    },
+    {
+      "name": "Taxa de Juros PF",
+      "Descrição": "Taxa de juros que representa a taxa média ajustada das operações compromissadas com prazo de um dia útil lastreadas com títulos públicos federais custodiados no Sistema Especial de Liquidação e de Custódia (Selic). Divulgação em % a.d.",
+      "code": 11
+    },
+    {
+      "name": "Spread médio PF",
+      "Descrição": "Diferença entre a taxa média de juros das novas operações de crédito livre contratadas no período de referência e o custo de captação referencial médio. Não inclui operações referenciadas em taxas regulamentadas, operações vinculadas a recursos do Banco Nacional de Desenvolvimento Econômico e Social (BNDES) ou quaisquer outras lastreadas em recursos compulsórios ou governamentais.",
+      "code": 20809
+    },
+    {
+      "name": "Concessões de crédito PF",
+      "Descrição": "Conceito: Valor das novas operações de crédito contratadas no período de referência com taxas de juros livremente pactuadas entre mutuários e instituições financeiras. Não inclui operações referenciadas em taxas regulamentadas, operações vinculadas a recursos do Banco Nacional de Desenvolvimento Econômico e Social (BNDES) ou quaisquer outras lastreadas em recursos compulsórios ou governamentais.",
+      "code": 20662
+    },
+    {
+      "name": "Inadimplência da carteira de crédito PF",
+      "Descrição": "Conceito: Percentual da carteira de crédito do Sistema Financeiro Nacional com pelo menos uma parcela com atraso superior a 90 dias. Inclui operações contratadas no segmento de crédito livre e no segmento de crédito direcionado.",
+      "code": 21084
+    },
+    {
+      "name": "Captação líquida diária de depósitos de poupança - SBPE",
+      "Descrição": "A captação líquida é representada pela soma das aplicações e dos rendimentos creditados, excluindo-se as retiradas",
+      "code": 240
+    },
+    {
+      "name": "Saldo diário de depósitos de poupança - SBPE e rural",
+      "Descrição": "Saldo diário de depósitos de poupança - SBPE e rural",
+      "code": 23
+    },
+    {
+      "name": "Índice de Confiança do Consumidor",
+      "Descrição": "O Índice de Confiança do Consumidor (ICC) busca identificar o sentimento dos consumidores relativo às suas condições financeiras, às suas perspectivas futuras e também a percepção que o consumidor tem das condições econômicas do país.",
+      "code": 4393
+    },
+    {
+      "name": "Índice nacional de preços ao consumidor-amplo (IPCA)",
+      "Descrição": "O IPCA tem por objetivo medir a inflação de um conjunto de produtos e serviços comercializados no varejo, referentes ao consumo pessoal das famílias. Para garantir uma cobertura de 90% das famílias das áreas urbanas do País, abrange atualmente aquelas com rendimentos de 1 a 40 salários mínimos nas regiões metropolitanas de Belém, Fortaleza, Recife, Salvador, Belo Horizonte, Vitória, Rio de Janeiro, São Paulo, Curitiba e Porto Alegre, além do Distrito Federal e dos municípios de Goiânia, Campo Grande, Rio Branco, São Luís e Aracaju. (Var. % mensal)",
+      "code": 433
+    }
+  ]
+  
