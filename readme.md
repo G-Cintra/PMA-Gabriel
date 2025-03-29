@@ -18,9 +18,9 @@ The group is dedicated to the practical exploration of economic models using mod
 
 This repository contains Jupyter notebooks developed by us. Each notebook serves as a self-contained tool as detailed below.
 
-### [BCB Data Retrieval Interface](./notebooks/BCB.ipynb)
+### [BCB Data Retrieval Interface](./notebooks/BCB.ipynb) and [IBGE Data Retrieval Interface](./notebooks/IBGE.ipynb)
 
-This notebook provides a user-friendly interface for retrieving time series data from the **Banco Central do Brasil (BCB) API**. It enables users to:
+These notebooks provides a user-friendly interface for retrieving time series data from the **Banco Central do Brasil (BCB) API** and from the **Brazilian Institute of Geography and Statistics (IBGE) API**. It enables users to:
 
 - Select a macroeconomic time series from a curated list
 - Define a custom date range for data retrieval
@@ -29,6 +29,8 @@ This notebook provides a user-friendly interface for retrieving time series data
 - Visualize the data directly within the notebook using Seaborn
 
 The notebook is designed to ensure data integrity, traceability, and ease of use, especially for academic or research purposes.
+
+
 
 > Additional notebooks will be added as the project evolves.
 

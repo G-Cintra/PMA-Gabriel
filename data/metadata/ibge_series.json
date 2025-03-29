@@ -1,0 +1,63 @@
+[
+  {
+    "name": "GDP Quarterly - Real - 1620-583-90707",
+    "table": 1620,
+    "variable": 583,
+    "period": "all",
+    "category": 90707,
+    "geography": "Brazil",
+    "frequency": "quarterly"
+  },
+  {
+    "name": "GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707",
+    "table": 1621,
+    "variable": 584,
+    "period": "all",
+    "category": 90707,
+    "geography": "Brazil",
+    "frequency": "quarterly"
+  },
+  {
+    "name": "GDP Quarterly - Current Prices 1846-585-90707",
+    "table": 1846,
+    "variable": 585,
+    "period": "all",
+    "category": 90707,
+    "geography": "Brazil",
+    "frequency": "quarterly"
+  },
+  {
+    "name": "GDP Quarterly - 1995 Prices 6612-9318-90707",
+    "table": 6612,
+    "variable": 9318,
+    "period": "all",
+    "category": 90707,
+    "geography": "Brazil",
+    "frequency": "quarterly"
+  },
+  {
+    "name": "GDP Quarterly - 1995 Prices (Seasonally Adjusted) 6613-9319-90707",
+    "table": 6613,
+    "variable": 9319,
+    "period": "all",
+    "category": 90707,
+    "geography": "Brazil",
+    "frequency": "quarterly"
+  },
+  {
+    "name": "GDP Annual - Current Prices 6784-9808",
+    "table": 6784,
+    "variable": 9808,
+    "period": "all",
+    "geography": "Brazil",
+    "frequency": "annual"
+  },
+  {
+    "name": "GDP Annual - Previous Year Prices 6784-9809",
+    "table": 6784,
+    "variable": 9809,
+    "period": "all",
+    "geography": "Brazil",
+    "frequency": "annual"
+  }
+]
