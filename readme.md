@@ -18,7 +18,7 @@ The group is dedicated to the practical exploration of economic models using mod
 
 This repository contains Jupyter notebooks developed by us. Each notebook serves as a self-contained tool as detailed below.
 
-### `1-BCB.ipynb` – BCB Data Retrieval Interface
+### [BCB Data Retrieval Interface](./notebooks/1-BCB.ipynb)
 
 This notebook provides a user-friendly interface for retrieving time series data from the **Banco Central do Brasil (BCB) API**. It enables users to:
 
