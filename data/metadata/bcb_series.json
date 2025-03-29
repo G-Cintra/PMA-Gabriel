@@ -5,11 +5,6 @@
       "code": 11
     },
     {
-      "name": "Taxa de Juros PF",
-      "Descrição": "Taxa de juros que representa a taxa média ajustada das operações compromissadas com prazo de um dia útil lastreadas com títulos públicos federais custodiados no Sistema Especial de Liquidação e de Custódia (Selic). Divulgação em % a.d.",
-      "code": 11
-    },
-    {
       "name": "Spread médio PF",
       "Descrição": "Diferença entre a taxa média de juros das novas operações de crédito livre contratadas no período de referência e o custo de captação referencial médio. Não inclui operações referenciadas em taxas regulamentadas, operações vinculadas a recursos do Banco Nacional de Desenvolvimento Econômico e Social (BNDES) ou quaisquer outras lastreadas em recursos compulsórios ou governamentais.",
       "code": 20809

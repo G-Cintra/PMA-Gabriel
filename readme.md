@@ -14,6 +14,25 @@ The group is dedicated to the practical exploration of economic models using mod
 - **Current status:** Under active development  
 - **Contributions:** Open to members of the study group. Future contributions from the broader community may be welcomed as the project evolves.
 
+## 📓 Notebooks
+
+This repository contains Jupyter notebooks developed by us. Each notebook serves as a self-contained tool as detailed below.
+
+### `1-BCB.ipynb` – BCB Data Retrieval Interface
+
+This notebook provides a user-friendly interface for retrieving time series data from the **Banco Central do Brasil (BCB) API**. It enables users to:
+
+- Select a macroeconomic time series from a curated list
+- Define a custom date range for data retrieval
+- Automatically log all activity for transparency and debugging
+- Save the resulting dataset with a unique filename and hash for reproducibility
+- Visualize the data directly within the notebook using Seaborn
+
+The notebook is designed to ensure data integrity, traceability, and ease of use, especially for academic or research purposes.
+
+> Additional notebooks will be added as the project evolves.
+
+
 ## ⚙️ Dependencies
 
 All required Python packages for this project are listed in the `requirements.txt` file. This ensures consistent environments across different machines and collaborators.

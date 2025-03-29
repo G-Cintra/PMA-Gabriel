@@ -13,7 +13,7 @@ def start_logger(logger_name: str, log_file_path: str) -> logging.Logger:
         logging.Logger: The configured logger instance.
     """
     logger = logging.getLogger(logger_name)
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
 
     # Remove any existing handlers
     if logger.hasHandlers():
@@ -37,20 +37,8 @@ def start_logger(logger_name: str, log_file_path: str) -> logging.Logger:
     # Stream handler (outputs to notebook)
     stream_handler = logging.StreamHandler()
     stream_handler.setFormatter(formatter)
+    stream_handler.setLevel(logging.INFO)
     logger.addHandler(stream_handler)
 
-    logger.info("Logger started.")
+    logger.info("Logger started. File path: " + log_file_path)
     return logger
-
-
-def shutdown_logger(logger: logging.Logger):
-    """
-    Shuts down the logger and closes all its handlers.
-
-    Parameters:
-        logger (logging.Logger): The logger to shut down.
-    """
-    logger.info("Logger shutting down.")
-    for handler in logger.handlers[:]:
-        handler.close()
-        logger.removeHandler(handler)
