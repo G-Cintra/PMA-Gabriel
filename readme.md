@@ -30,7 +30,22 @@ These notebooks provides a user-friendly interface for retrieving time series da
 
 The notebook is designed to ensure data integrity, traceability, and ease of use, especially for academic or research purposes.
 
+### [GDP Filtering Notebook](./notebooks/Filtering.ipynb)
 
+This notebook scans the data/raw/ folder to identify the **latest available PIB (GDP) series** downloaded from IBGE.  
+It matches each file to its metadata and presents an interface where users can select between:
+
+- Real or Nominal GDP  
+- Seasonally Adjusted or Not  
+- Quarterly or Annual Frequency  
+
+Once a series is selected, the notebook applies a series of common transformations and filters used in macroeconomic analysis, including:
+
+- Log transformation (NumPy)
+- First difference and percentage change (pandas)
+- HP, Baxter-King, and Christiano-Fitzgerald filters (statsmodels)
+
+These operations rely on well-established Python libraries and provide an interactive interface for visual exploration of trends and cycles in GDP data.
 
 > Additional notebooks will be added as the project evolves.
 
