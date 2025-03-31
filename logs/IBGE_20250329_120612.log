@@ -1,0 +1,3 @@
+2025-03-29 12:06:12,472 - INFO - Logger started. File path: ../logs/IBGE_20250329_120612.log
+2025-03-29 12:08:38,628 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-29 12:08:39,560 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/4094/v/4098/p/all/N1/1 HTTP/1.1" 200 19094

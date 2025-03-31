@@ -1,0 +1,4 @@
+2025-03-30 22:10:47,023 - INFO - Logger started. File path: ../logs/Filtering_20250330_221047.log
+2025-03-30 22:10:49,551 - INFO - Loaded IBGE Metadata from file: ../data/metadata/ibge_series.json
+2025-03-30 22:11:25,722 - DEBUG - handle_msg[66fd26ace46a4ac4954ebeec6760f526]({'header': {'date': datetime.datetime(2025, 3, 31, 1, 11, 25, 720000, tzinfo=tzutc()), 'msg_id': '12285c38-ece3-412c-8629-ac95ef77766b', 'msg_type': 'comm_msg', 'session': '60cb982d-a946-49d9-8f48-634fe7b86d90', 'username': '76f68184-09aa-487f-8c42-040a213b68f4', 'version': '5.2'}, 'msg_id': '12285c38-ece3-412c-8629-ac95ef77766b', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '66fd26ace46a4ac4954ebeec6760f526', 'data': {'method': 'update', 'state': {'index': 1}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-30 22:11:30,587 - INFO - Loaded IBGE Metadata from file: ../data/metadata/ibge_series.json

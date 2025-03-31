@@ -1,0 +1,28 @@
+2025-03-31 13:47:38,411 - INFO - Logger started. File path: ../logs/IBGE_20250331_134738.log
+2025-03-31 13:47:42,087 - INFO - Loaded IBGE Metadata from file: ../data/metadata/ibge_series.json
+2025-03-31 13:47:49,099 - DEBUG - handle_msg[cd2d6e0da037430c9868ce1c35c578a4]({'header': {'date': datetime.datetime(2025, 3, 31, 16, 47, 49, 97000, tzinfo=tzutc()), 'msg_id': '47193aab-7e2d-487a-998a-d5ed7951c7ff', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': '47193aab-7e2d-487a-998a-d5ed7951c7ff', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'cd2d6e0da037430c9868ce1c35c578a4', 'data': {'method': 'update', 'state': {'index': 1}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 13:48:47,441 - INFO - Loaded IBGE Metadata from file: ../data/metadata/ibge_series.json
+2025-03-31 13:48:50,234 - DEBUG - handle_msg[06d710d876f647fba565832ead8ce855]({'header': {'date': datetime.datetime(2025, 3, 31, 16, 48, 50, 232000, tzinfo=tzutc()), 'msg_id': 'fe7e67e3-6618-4b9c-a3c9-7751024e181a', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': 'fe7e67e3-6618-4b9c-a3c9-7751024e181a', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '06d710d876f647fba565832ead8ce855', 'data': {'method': 'update', 'state': {'index': 1}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 13:48:51,432 - DEBUG - handle_msg[06d710d876f647fba565832ead8ce855]({'header': {'date': datetime.datetime(2025, 3, 31, 16, 48, 51, 430000, tzinfo=tzutc()), 'msg_id': 'a7168eac-5d52-481c-bc20-4df05926f664', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': 'a7168eac-5d52-481c-bc20-4df05926f664', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '06d710d876f647fba565832ead8ce855', 'data': {'method': 'update', 'state': {'index': 2}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 13:48:51,908 - DEBUG - handle_msg[f557838a33744fe1a3707be03450c6f9]({'header': {'date': datetime.datetime(2025, 3, 31, 16, 48, 51, 906000, tzinfo=tzutc()), 'msg_id': '01b03b1b-7336-4619-8fbb-94fecc1c6cb8', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': '01b03b1b-7336-4619-8fbb-94fecc1c6cb8', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'f557838a33744fe1a3707be03450c6f9', 'data': {'method': 'update', 'state': {'index': [0]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 13:48:59,552 - INFO - Requesting data for: IPCA Montly Variation (Seasonally Adjusted) - From Jan/1998
+2025-03-31 13:48:59,552 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/118/v/306/p/all/N1/1/
+2025-03-31 13:48:59,553 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 13:48:59,813 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/118/v/306/p/all/N1/1/ HTTP/1.1" 400 21
+2025-03-31 13:48:59,814 - ERROR - HTTP error for IPCA Montly Variation (Seasonally Adjusted) - From Jan/1998: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/118/v/306/p/all/N1/1/
+2025-03-31 13:52:29,221 - DEBUG - handle_msg[54f6095428f94b0eaf4f7439a81e64a3]({'header': {'date': datetime.datetime(2025, 3, 31, 16, 52, 29, 220000, tzinfo=tzutc()), 'msg_id': '1e41407a-251c-48a9-9853-17a5fd749f25', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': '1e41407a-251c-48a9-9853-17a5fd749f25', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '54f6095428f94b0eaf4f7439a81e64a3', 'data': {'method': 'update', 'state': {'index': 0}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 13:52:32,041 - INFO - Requesting data for: IPCA Montly Variation (Seasonally Adjusted) - From Jan/1998
+2025-03-31 13:52:32,042 - DEBUG - URL: https://servicodados.ibge.gov.br/api/v3/agregados/118/periodos/all/variaveis/306?localidades=N1[all]
+2025-03-31 13:52:32,042 - DEBUG - Starting new HTTPS connection (1): servicodados.ibge.gov.br:443
+2025-03-31 13:52:32,451 - DEBUG - https://servicodados.ibge.gov.br:443 "GET /api/v3/agregados/118/periodos/all/variaveis/306?localidades=N1%5Ball%5D HTTP/1.1" 200 5449
+2025-03-31 13:52:32,452 - INFO - JSON file saved: ../data/raw/IBGE_20250331_134738_T118-V306_135232.json
+2025-03-31 13:52:32,453 - DEBUG - SSHA-256 hash of saved JSON file: 9288afd65fda72e515dd72e6b2b94b6ca21b1cc2f593710ccf346b7547970b03
+2025-03-31 13:52:32,453 - ERROR - Unexpected error for IPCA Montly Variation (Seasonally Adjusted) - From Jan/1998: 'D2C'
+Traceback (most recent call last):
+  File "/home/gabriel/Documents/Economia/PMA-Gabriel/src/ibge.py", line 89, in fetch_and_save
+    df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-' + (df['D2C'].str[4:].astype(int) * 3 - 2).astype(str), format='%Y-%m')
+  File "/home/gabriel/Documents/Economia/PMA-Gabriel/.venv/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/gabriel/Documents/Economia/PMA-Gabriel/.venv/lib/python3.10/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'D2C'

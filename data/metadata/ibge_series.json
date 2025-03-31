@@ -5,7 +5,7 @@
     "variable": 583,
     "period": "all",
     "category": 90707,
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "quarterly"
   },
   {
@@ -14,7 +14,7 @@
     "variable": 584,
     "period": "all",
     "category": 90707,
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "quarterly"
   },
   {
@@ -23,7 +23,7 @@
     "variable": 585,
     "period": "all",
     "category": 90707,
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "quarterly"
   },
   {
@@ -32,7 +32,7 @@
     "variable": 9318,
     "period": "all",
     "category": 90707,
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "quarterly"
   },
   {
@@ -41,7 +41,7 @@
     "variable": 9319,
     "period": "all",
     "category": 90707,
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "quarterly"
   },
   {
@@ -49,7 +49,7 @@
     "table": 6784,
     "variable": 9808,
     "period": "all",
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "annual"
   },
   {
@@ -57,7 +57,15 @@
     "table": 6784,
     "variable": 9809,
     "period": "all",
-    "geography": "Brazil",
+    "geography": "1",
     "frequency": "annual"
-  }
+  },
+  {
+    "name": "IPCA Montly Variation (Seasonally Adjusted) - From Jan/1998 118-306",
+    "table": 118,
+    "variable": 306,
+    "period": "all",
+    "geography": "1",
+    "frequency": "monthly"
+  }  
 ]

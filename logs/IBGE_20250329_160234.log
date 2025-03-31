@@ -1,0 +1,13 @@
+2025-03-29 16:02:34,844 - INFO - Logger started. File path: ../logs/IBGE_20250329_160234.log
+2025-03-29 16:12:08,124 - INFO - Requesting data for: GDP Quarterly - Real - 1620-583-90707
+2025-03-29 16:12:08,124 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/1/c11255/90707
+2025-03-29 16:12:08,125 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-29 16:12:09,626 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1620/v/583/p/all/N1/1/c11255/90707 HTTP/1.1" 200 44401
+2025-03-29 16:12:09,662 - INFO - File saved: ../data/IBGE Índice de Desemprego - T4094 - V4098 - 20250329120839.csv.json
+2025-03-29 16:12:09,662 - DEBUG - SSHA-256 hash of saved file: 121da2ac68102cd1478ba312a753209c32a6587689e67ee69071825485834031
+2025-03-29 16:14:14,681 - INFO - Requesting data for: GDP Quarterly - Real - 1620-583-90707
+2025-03-29 16:14:14,681 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/1/c11255/90707
+2025-03-29 16:14:14,682 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-29 16:14:15,930 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1620/v/583/p/all/N1/1/c11255/90707 HTTP/1.1" 200 44401
+2025-03-29 16:14:15,997 - INFO - File saved: ../data/raw/IBGE_20250329_160234_T1620-V583_161259.json
+2025-03-29 16:14:15,997 - DEBUG - SSHA-256 hash of saved file: 121da2ac68102cd1478ba312a753209c32a6587689e67ee69071825485834031

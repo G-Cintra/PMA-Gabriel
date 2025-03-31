@@ -24,29 +24,33 @@ def load_ibge_series_metadata(json_path: str = "../data/metadata/ibge_series.jso
 
     return df.set_index("name")
 
-def name_to_details(name,df_ibge_series_metadata):
+def name_to_details(name,df_ibge_series_metadata,sidra):
     # Get Series Metadata
     row = df_ibge_series_metadata.loc[name]
 
     #Build URL
     if pd.notna(row["category"]):
-            category = f"c11255/{row['category']:.0f}"
+            if sidra:
+                category = f"/c11255/{row['category']:.0f}"
+            else:
+                category = f"&classificacao=11255[{row['category']:.0f}]"
     else:
             category = ""
 
     table=row["table"]
     variable=row["variable"]
+    geography=row["geography"]
+    frequency=row["frequency"]
+    return table,variable,category,geography,frequency
 
-    return table,variable,category
 
-
-def build_URL(table,variable,category,sidra):
+def build_URL(table,variable,category,geography,sidra):
 
     # Select Base URL
     if sidra:
-        base_url = f"https://apisidra.ibge.gov.br/values/t/{table}/v/{variable}/p/all/N1/1/{category}"
+        base_url = f"https://apisidra.ibge.gov.br/values/t/{table}/v/{variable}/p/all/N1/{geography}{category}"
     else:
-        base_url = f"https://servicodados.ibge.gov.br/api/v3/agregados/{table}/periodos/all/variaveis/{variable}?localidades=N1[all]{category}"
+        base_url = f"https://servicodados.ibge.gov.br/api/v3/agregados/{table}/periodos/all/variaveis/{variable}?localidades=N1[{geography}]{category}"
 
     url = base_url.format(
         table=table,
@@ -57,7 +61,7 @@ def build_URL(table,variable,category,sidra):
     return url
 
 
-def fetch_and_save(url, name, filename):
+def fetch_and_save(url, name, filename,frequency):
     logger = logging.getLogger()
 
     try:
@@ -86,7 +90,13 @@ def fetch_and_save(url, name, filename):
 
         # Create dataframe
         df = pd.DataFrame(data[1:]) 
-        df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-' + (df['D2C'].str[4:].astype(int) * 3 - 2).astype(str), format='%Y-%m')    
+        if frequency == "quarterly":
+            df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-' + (df['D2C'].str[4:].astype(int) * 3 - 2).astype(str), format='%Y-%m')    
+        if frequency == "annual":
+           df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-01', format='%Y-%m')     
+        else:
+            df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-' + (df['D2C'].str[4:].astype(int)).astype(str), format='%Y-%m')    
+        
         df['valor'] = pd.to_numeric(df['V'], errors='coerce')
         df = df[['data', 'valor']]
 

@@ -1,0 +1,54 @@
+2025-03-31 14:00:37,526 - INFO - Logger started. File path: ../logs/IBGE_20250331_140037.log
+2025-03-31 14:00:39,587 - INFO - Loaded IBGE Metadata from file: ../data/metadata/ibge_series.json
+2025-03-31 14:00:43,119 - DEBUG - handle_msg[000a71ce372b4f87841390ff6b889d25]({'header': {'date': datetime.datetime(2025, 3, 31, 17, 0, 43, 117000, tzinfo=tzutc()), 'msg_id': '3b03eedd-2a27-4764-acb9-5cd7f3e87944', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': '3b03eedd-2a27-4764-acb9-5cd7f3e87944', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '000a71ce372b4f87841390ff6b889d25', 'data': {'method': 'update', 'state': {'index': [0]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 14:00:43,682 - DEBUG - handle_msg[000a71ce372b4f87841390ff6b889d25]({'header': {'date': datetime.datetime(2025, 3, 31, 17, 0, 43, 681000, tzinfo=tzutc()), 'msg_id': '982ce242-8823-4352-9d93-4646334feaca', 'msg_type': 'comm_msg', 'session': '092388d7-1597-4739-8def-aa162369a33b', 'username': '5d1fe5bb-d292-4242-98f7-a6c5f69eaf3b', 'version': '5.2'}, 'msg_id': '982ce242-8823-4352-9d93-4646334feaca', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '000a71ce372b4f87841390ff6b889d25', 'data': {'method': 'update', 'state': {'index': [0, 1, 2, 3, 4]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 14:00:45,181 - INFO - Requesting data for: GDP Quarterly - Real - 1620-583-90707
+2025-03-31 14:00:45,182 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,182 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:00:45,417 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1620/v/583/p/all/N1/c11255/90707/1 HTTP/1.1" 400 75
+2025-03-31 14:00:45,418 - ERROR - HTTP error for GDP Quarterly - Real - 1620-583-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,418 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 14:00:45,418 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,419 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:00:45,587 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/c11255/90707/1 HTTP/1.1" 400 75
+2025-03-31 14:00:45,587 - ERROR - HTTP error for GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,588 - INFO - Requesting data for: GDP Quarterly - Current Prices 1846-585-90707
+2025-03-31 14:00:45,588 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1846/v/585/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,589 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:00:45,750 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1846/v/585/p/all/N1/c11255/90707/1 HTTP/1.1" 400 75
+2025-03-31 14:00:45,751 - ERROR - HTTP error for GDP Quarterly - Current Prices 1846-585-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1846/v/585/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,752 - INFO - Requesting data for: GDP Quarterly - 1995 Prices 6612-9318-90707
+2025-03-31 14:00:45,752 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6612/v/9318/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,752 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:00:45,919 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6612/v/9318/p/all/N1/c11255/90707/1 HTTP/1.1" 400 75
+2025-03-31 14:00:45,919 - ERROR - HTTP error for GDP Quarterly - 1995 Prices 6612-9318-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/6612/v/9318/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,920 - INFO - Requesting data for: GDP Quarterly - 1995 Prices (Seasonally Adjusted) 6613-9319-90707
+2025-03-31 14:00:45,920 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6613/v/9319/p/all/N1/c11255/90707/1
+2025-03-31 14:00:45,921 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:00:46,080 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6613/v/9319/p/all/N1/c11255/90707/1 HTTP/1.1" 400 75
+2025-03-31 14:00:46,081 - ERROR - HTTP error for GDP Quarterly - 1995 Prices (Seasonally Adjusted) 6613-9319-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/6613/v/9319/p/all/N1/c11255/90707/1
+2025-03-31 14:01:56,544 - INFO - Requesting data for: GDP Quarterly - Real - 1620-583-90707
+2025-03-31 14:01:56,544 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/1/c11255/90707
+2025-03-31 14:01:56,545 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:01:56,798 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1620/v/583/p/all/N1/1/c11255/90707 HTTP/1.1" 400 142
+2025-03-31 14:01:56,798 - ERROR - HTTP error for GDP Quarterly - Real - 1620-583-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/1/c11255/90707
+2025-03-31 14:01:56,798 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 14:01:56,799 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 14:01:56,799 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:01:56,963 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 400 142
+2025-03-31 14:01:56,963 - ERROR - HTTP error for GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 14:01:56,963 - INFO - Requesting data for: GDP Quarterly - Current Prices 1846-585-90707
+2025-03-31 14:01:56,963 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1846/v/585/p/all/N1/1/c11255/90707
+2025-03-31 14:01:56,964 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:01:57,132 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1846/v/585/p/all/N1/1/c11255/90707 HTTP/1.1" 400 142
+2025-03-31 14:01:57,132 - ERROR - HTTP error for GDP Quarterly - Current Prices 1846-585-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1846/v/585/p/all/N1/1/c11255/90707
+2025-03-31 14:01:57,133 - INFO - Requesting data for: GDP Quarterly - 1995 Prices 6612-9318-90707
+2025-03-31 14:01:57,133 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6612/v/9318/p/all/N1/1/c11255/90707
+2025-03-31 14:01:57,133 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:01:57,302 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6612/v/9318/p/all/N1/1/c11255/90707 HTTP/1.1" 400 143
+2025-03-31 14:01:57,302 - ERROR - HTTP error for GDP Quarterly - 1995 Prices 6612-9318-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/6612/v/9318/p/all/N1/1/c11255/90707
+2025-03-31 14:01:57,303 - INFO - Requesting data for: GDP Quarterly - 1995 Prices (Seasonally Adjusted) 6613-9319-90707
+2025-03-31 14:01:57,303 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6613/v/9319/p/all/N1/1/c11255/90707
+2025-03-31 14:01:57,303 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 14:01:57,470 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6613/v/9319/p/all/N1/1/c11255/90707 HTTP/1.1" 400 143
+2025-03-31 14:01:57,470 - ERROR - HTTP error for GDP Quarterly - 1995 Prices (Seasonally Adjusted) 6613-9319-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/6613/v/9319/p/all/N1/1/c11255/90707

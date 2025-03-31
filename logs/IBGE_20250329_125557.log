@@ -1,0 +1,2 @@
+2025-03-29 12:55:57,469 - INFO - Logger started. File path: ../logs/IBGE_20250329_125557.log
+2025-03-29 12:55:57,470 - INFO - Loaded IBGE Metadata from file: ../data/metadata/ibge_series.json
