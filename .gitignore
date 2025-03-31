@@ -1,5 +1,5 @@
 .venv
-*.csv
-*.log
-IBGE*.json
+#*.csv
+#*.log
+#IBGE*.json
 notebook.ipynb
