@@ -90,8 +90,10 @@ def fetch_and_save(url, name, filename,frequency):
 
         # Create dataframe
         df = pd.DataFrame(data[1:]) 
+        logger.debug(f"{df['D2C']}-{frequency }")
         if frequency == "quarterly":
             df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-' + (df['D2C'].str[4:].astype(int) * 3 - 2).astype(str), format='%Y-%m')    
+            
         if frequency == "annual":
            df['data'] = pd.to_datetime(df['D2C'].str[:4] + '-01', format='%Y-%m')     
         else:
