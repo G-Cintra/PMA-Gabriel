@@ -11,6 +11,7 @@ from utils import compute_file_hash
 def file_explorer(df_series_metadata ):
     file_dropdown = None
     file_map = {}
+    tv_label_map = {}
 
     # ─────────────────────────────────────
     # STEP 1: Scan folder and extract file info
@@ -62,10 +63,37 @@ def file_explorer(df_series_metadata ):
 
     def update_tv_options(change):
         selected_source = change["new"]
-        filtered = df_all_files[df_all_files["source"] == selected_source]
-        tv_selector.options = sorted(filtered["T-V"].unique())
+        # Filter files by source
+        filtered = df_all_files[df_all_files["source"] == selected_source].copy()
+
+        # Ensure table and variable are integers for joining
+        filtered["table"] = filtered["table"].astype(int)
+        filtered["variable"] = filtered["variable"].astype(int)
+
+        # Merge with metadata to get series name
+        merged = filtered.merge(
+            df_series_metadata.reset_index(),  # Ensure 'name' is available
+            how="left",
+            on=["table", "variable"]
+        )
+
+        # Create a label like: T1234-V5678 | My Series Name
+        merged["tv_label"] = merged.apply(
+            lambda row: f"T{row['table']}-V{row['variable']} | {row['name'] if pd.notna(row['name']) else '(Unnamed)'}",
+            axis=1
+        )
+
+        # Map: display label → actual T-V code
+        tv_label_map.clear()
+        tv_label_map.update(dict(zip(merged["tv_label"], merged["T-V"])))
+
+        # Set dropdown options to the labels
+        tv_selector.options = sorted(tv_label_map.keys(), key=lambda s: s.split(" | ", 1)[1])
+
+        # Select the first one by default
         if tv_selector.options:
             tv_selector.value = tv_selector.options[0]
+
 
     # Container for dropdown and plot
     file_selector_container = widgets.VBox()
@@ -81,7 +109,7 @@ def file_explorer(df_series_metadata ):
             file_selector_container.children = []  # Reset
 
             source = source_selector.value
-            tv = tv_selector.value
+            tv = tv_label_map[tv_selector.value]
             filtered = df_all_files[
                 (df_all_files["source"] == source) & 
                 (df_all_files["T-V"] == tv)
@@ -135,9 +163,9 @@ def file_explorer(df_series_metadata ):
                 description="File:",
                 layout=widgets.Layout(width="700px", height="150px")
             )
-
             # Define plot function
             def plot_selected_file(change):
+
                 with file_plot_output:
                     clear_output()
                     selected_label = change["new"]
@@ -165,12 +193,11 @@ def file_explorer(df_series_metadata ):
                         else:
                             print("Column 'valor' not found.")
                     except Exception as e:
-                        print(f"Error reading or plotting file: {e}")
+                        print(f"Error reading or plotting file: {e}")   
 
-            # Link change event
+            # Now register observer AFTER triggering initial plot
             file_dropdown.observe(plot_selected_file, names="value")
 
-            # Trigger first plot
             plot_selected_file({"new": file_dropdown.value})
 
             # Add widgets to UI
@@ -202,6 +229,7 @@ def file_explorer(df_series_metadata ):
         "file_dropdown": file_dropdown,
         "file_map": file_map
     }
+
 
 import ipywidgets as widgets
 from IPython.display import display, clear_output, Markdown
@@ -270,3 +298,54 @@ def raw_cleanup_widget():
         confirmation_output,
         result_output
     ]))
+
+def plot_columns_selector(df):
+    # Ensure 'data' column is datetime
+    df = df.copy()
+    df["data"] = pd.to_datetime(df["data"])
+    df = df.sort_values("data")
+
+    # Extract Y columns (exclude 'data')
+    y_columns = df.columns.drop("data")
+
+    # Create SelectMultiple widget
+    column_selector = widgets.SelectMultiple(
+        options=y_columns,
+        description="Y columns:",
+        layout=widgets.Layout(width='250px', height='300px')
+    )
+
+    # Output area for the plot
+    plot_output = widgets.Output()
+
+    # Define the update function
+    def update_plot(change):
+        with plot_output:
+            clear_output(wait=True)
+            selected_cols = list(column_selector.value)
+            if selected_cols:
+                plt.figure(figsize=(12, 6))
+                sns.set_theme()
+                for col in selected_cols:
+                    plt.plot(df["data"], df[col], label=col)
+                plt.xlabel("Date")
+                plt.ylabel("Value")
+                plt.title("Selected Series")
+                plt.legend()
+                plt.tight_layout()
+                plt.show()
+            else:
+                print("Select at least one column to display.")
+
+    # Attach the observer
+    column_selector.observe(update_plot, names="value")
+
+    # Trigger an initial plot
+    update_plot({"new": column_selector.value})
+
+    # Layout side-by-side
+    ui = widgets.HBox([
+        column_selector,
+        plot_output
+    ])
+    display(ui)
