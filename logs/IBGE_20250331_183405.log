@@ -12,3 +12,152 @@
 2025-03-31 18:34:27,680 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
 2025-03-31 18:34:27,912 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 400 142
 2025-03-31 18:34:27,912 - ERROR - HTTP error for GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 18:36:50,075 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 18:36:50,076 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 18:36:50,076 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 18:36:50,332 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 400 142
+2025-03-31 18:36:50,332 - ERROR - HTTP error for GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707: 400 Client Error: Bad Request for url: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 20:43:27,767 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 20:43:27,768 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 20:43:27,768 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:43:28,388 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 200 46605
+2025-03-31 20:43:28,424 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204327.json
+2025-03-31 20:43:28,425 - DEBUG - SSHA-256 hash of saved JSON file: 8ba8609aaa8b4bfd7d472332889488f81a8b173dc654d40b3865519f15f6cbbe
+2025-03-31 20:43:28,426 - DEBUG - 0      199601
+1      199602
+2      199603
+3      199604
+4      199701
+        ...  
+111    202304
+112    202401
+113    202402
+114    202403
+115    202404
+Name: D2C, Length: 116, dtype: object-quarterly
+2025-03-31 20:43:28,428 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204327.csv
+2025-03-31 20:43:28,428 - DEBUG - SHA-256 hash of saved CSV file: 7468551afdab82cf72887f403dc2a5e8bef034aa636967a0d97f531278c20c84
+2025-03-31 20:47:11,928 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 20:47:11,928 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 20:47:11,928 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:47:12,598 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 200 46605
+2025-03-31 20:47:12,630 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204711.json
+2025-03-31 20:47:12,631 - DEBUG - SSHA-256 hash of saved JSON file: 8ba8609aaa8b4bfd7d472332889488f81a8b173dc654d40b3865519f15f6cbbe
+2025-03-31 20:47:12,631 - DEBUG - quarterly
+2025-03-31 20:47:12,633 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204711.csv
+2025-03-31 20:47:12,634 - DEBUG - SHA-256 hash of saved CSV file: 7468551afdab82cf72887f403dc2a5e8bef034aa636967a0d97f531278c20c84
+2025-03-31 20:48:13,492 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 20:48:13,492 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 20:48:13,493 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:48:14,237 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 200 46605
+2025-03-31 20:48:14,288 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204813.json
+2025-03-31 20:48:14,290 - DEBUG - SSHA-256 hash of saved JSON file: 8ba8609aaa8b4bfd7d472332889488f81a8b173dc654d40b3865519f15f6cbbe
+2025-03-31 20:48:14,290 - DEBUG - quarterly
+2025-03-31 20:48:14,291 - DEBUG - 0      1
+1      2
+2      3
+3      4
+4      1
+      ..
+111    4
+112    1
+113    2
+114    3
+115    4
+Name: D2C, Length: 116, dtype: int64
+2025-03-31 20:48:14,291 - DEBUG - 0       1
+1       4
+2       7
+3      10
+4       1
+       ..
+111    10
+112     1
+113     4
+114     7
+115    10
+Name: D2C, Length: 116, dtype: object
+2025-03-31 20:48:14,293 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204813.csv
+2025-03-31 20:48:14,294 - DEBUG - SHA-256 hash of saved CSV file: 7468551afdab82cf72887f403dc2a5e8bef034aa636967a0d97f531278c20c84
+2025-03-31 20:49:52,198 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 20:49:52,198 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 20:49:52,199 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:49:53,131 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 200 46605
+2025-03-31 20:49:53,153 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204952.json
+2025-03-31 20:49:53,153 - DEBUG - SSHA-256 hash of saved JSON file: 8ba8609aaa8b4bfd7d472332889488f81a8b173dc654d40b3865519f15f6cbbe
+2025-03-31 20:49:53,155 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_204952.csv
+2025-03-31 20:49:53,155 - DEBUG - SHA-256 hash of saved CSV file: d084c7c0fdcbed2a9a4d748cb476e89165ecd50afeff1a320c559a8e41420a26
+2025-03-31 20:49:56,474 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 49, 56, 472000, tzinfo=tzutc()), 'msg_id': 'ca82f2dd-2e7d-4c67-97ac-dd3db402bd24', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': 'ca82f2dd-2e7d-4c67-97ac-dd3db402bd24', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [0]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:49:56,960 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 49, 56, 959000, tzinfo=tzutc()), 'msg_id': '1ad08eda-a8a2-4bca-8c1b-f3a5e35b108c', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '1ad08eda-a8a2-4bca-8c1b-f3a5e35b108c', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [1]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:49:57,388 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 49, 57, 386000, tzinfo=tzutc()), 'msg_id': 'd766ac7a-007b-4b52-80ef-4c016df78d28', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': 'd766ac7a-007b-4b52-80ef-4c016df78d28', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [2]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:49:58,248 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 49, 58, 246000, tzinfo=tzutc()), 'msg_id': 'a1a1311e-90ef-4b05-b761-230ae0d83f67', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': 'a1a1311e-90ef-4b05-b761-230ae0d83f67', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [0]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:49:59,813 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 49, 59, 812000, tzinfo=tzutc()), 'msg_id': '30ee1872-d69d-4b8a-a312-5def159dcd60', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '30ee1872-d69d-4b8a-a312-5def159dcd60', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [0, 1, 2, 3, 4]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:50:03,221 - INFO - Requesting data for: GDP Quarterly - Real - 1620-583-90707
+2025-03-31 20:50:03,222 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1620/v/583/p/all/N1/1/c11255/90707
+2025-03-31 20:50:03,222 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:04,321 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1620/v/583/p/all/N1/1/c11255/90707 HTTP/1.1" 200 44401
+2025-03-31 20:50:04,366 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1620-V583_205003.json
+2025-03-31 20:50:04,366 - DEBUG - SSHA-256 hash of saved JSON file: 121da2ac68102cd1478ba312a753209c32a6587689e67ee69071825485834031
+2025-03-31 20:50:04,369 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1620-V583_205003.csv
+2025-03-31 20:50:04,369 - DEBUG - SHA-256 hash of saved CSV file: 135f7332358d0bae97fb3687b5f6dee24ee1ad23a79e038f430ec895ce618ae6
+2025-03-31 20:50:04,448 - INFO - Requesting data for: GDP Quarterly - Real (Seasonally Adjusted) 1621-584-90707
+2025-03-31 20:50:04,449 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1621/v/584/p/all/N1/1/c11255/90707
+2025-03-31 20:50:04,449 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:05,320 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1621/v/584/p/all/N1/1/c11255/90707 HTTP/1.1" 200 46605
+2025-03-31 20:50:05,411 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_205004.json
+2025-03-31 20:50:05,412 - DEBUG - SSHA-256 hash of saved JSON file: 8ba8609aaa8b4bfd7d472332889488f81a8b173dc654d40b3865519f15f6cbbe
+2025-03-31 20:50:05,414 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1621-V584_205004.csv
+2025-03-31 20:50:05,414 - DEBUG - SHA-256 hash of saved CSV file: d084c7c0fdcbed2a9a4d748cb476e89165ecd50afeff1a320c559a8e41420a26
+2025-03-31 20:50:05,496 - INFO - Requesting data for: GDP Quarterly - Current Prices 1846-585-90707
+2025-03-31 20:50:05,496 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/1846/v/585/p/all/N1/1/c11255/90707
+2025-03-31 20:50:05,497 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:06,082 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/1846/v/585/p/all/N1/1/c11255/90707 HTTP/1.1" 200 39471
+2025-03-31 20:50:06,156 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T1846-V585_205005.json
+2025-03-31 20:50:06,156 - DEBUG - SSHA-256 hash of saved JSON file: 72294b847bae9cbfc944552ac1b1388208e04a91ec4b14b280fcbb81d3593831
+2025-03-31 20:50:06,159 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T1846-V585_205005.csv
+2025-03-31 20:50:06,159 - DEBUG - SHA-256 hash of saved CSV file: ee37cf1eb6acba75be30c512ffc1a69a92a60b5ee6b7d6ac41eef5123cb12af9
+2025-03-31 20:50:06,240 - INFO - Requesting data for: GDP Quarterly - 1995 Prices 6612-9318-90707
+2025-03-31 20:50:06,240 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6612/v/9318/p/all/N1/1/c11255/90707
+2025-03-31 20:50:06,241 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:07,769 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6612/v/9318/p/all/N1/1/c11255/90707 HTTP/1.1" 200 40922
+2025-03-31 20:50:07,791 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T6612-V9318_205006.json
+2025-03-31 20:50:07,791 - DEBUG - SSHA-256 hash of saved JSON file: c2643d88bf95ef0c9012ad35469f868560ebd9019e19a46bc6d8a6b4e1bce734
+2025-03-31 20:50:07,794 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T6612-V9318_205006.csv
+2025-03-31 20:50:07,794 - DEBUG - SHA-256 hash of saved CSV file: cd23850bcfd2d0b828a7b0142d4a5408bd7001e6d4d3abd6d23ccffd325dcc42
+2025-03-31 20:50:07,896 - INFO - Requesting data for: GDP Quarterly - 1995 Prices (Seasonally Adjusted) 6613-9319-90707
+2025-03-31 20:50:07,896 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6613/v/9319/p/all/N1/1/c11255/90707
+2025-03-31 20:50:07,896 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:08,727 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6613/v/9319/p/all/N1/1/c11255/90707 HTTP/1.1" 200 43126
+2025-03-31 20:50:08,756 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T6613-V9319_205007.json
+2025-03-31 20:50:08,757 - DEBUG - SSHA-256 hash of saved JSON file: 0a8ed7703cd296d3b628c952d431b7bff15e290f2233a1c9f2b1a17d6fc4b006
+2025-03-31 20:50:08,759 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T6613-V9319_205007.csv
+2025-03-31 20:50:08,759 - DEBUG - SHA-256 hash of saved CSV file: 633ed196c593dc250e35d2fea24c0189f21195682f5aea651b05478b65688f1e
+2025-03-31 20:50:15,186 - DEBUG - handle_msg[b12052f28c334022bd34b31e3110e2f0]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 50, 15, 185000, tzinfo=tzutc()), 'msg_id': '0e125441-5ed0-4783-b156-e88178efabef', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '0e125441-5ed0-4783-b156-e88178efabef', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'b12052f28c334022bd34b31e3110e2f0', 'data': {'method': 'update', 'state': {'index': 1}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:50:15,677 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 50, 15, 675000, tzinfo=tzutc()), 'msg_id': '46c95e8f-c849-445c-b010-4c4540b4f5d7', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '46c95e8f-c849-445c-b010-4c4540b4f5d7', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [1]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:50:16,474 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 50, 16, 472000, tzinfo=tzutc()), 'msg_id': '58910e51-4da2-4d84-9a02-a9d3cb9f7267', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '58910e51-4da2-4d84-9a02-a9d3cb9f7267', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [0, 1]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:50:20,908 - INFO - Requesting data for: GDP Annual - Current Prices 6784-9808
+2025-03-31 20:50:20,908 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6784/v/9808/p/all/N1/1
+2025-03-31 20:50:20,909 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:21,231 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6784/v/9808/p/all/N1/1 HTTP/1.1" 200 7282
+2025-03-31 20:50:21,231 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T6784-V9808_205020.json
+2025-03-31 20:50:21,232 - DEBUG - SSHA-256 hash of saved JSON file: e0ab7a18280269603fc76fb3bb7870a07ad767317dc623fb9cd5ef7c4f488956
+2025-03-31 20:50:21,234 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T6784-V9808_205020.csv
+2025-03-31 20:50:21,234 - DEBUG - SHA-256 hash of saved CSV file: d85be5f256773cabb452155490c2df9d608d26444051111027c0d8c835dd1ee5
+2025-03-31 20:50:21,310 - INFO - Requesting data for: GDP Annual - Previous Year Prices 6784-9809
+2025-03-31 20:50:21,311 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/6784/v/9809/p/all/N1/1
+2025-03-31 20:50:21,311 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:21,734 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/6784/v/9809/p/all/N1/1 HTTP/1.1" 200 7442
+2025-03-31 20:50:21,735 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T6784-V9809_205021.json
+2025-03-31 20:50:21,736 - DEBUG - SSHA-256 hash of saved JSON file: 8a993972f20a9046d21e7c03ba9318415f52a93bfcea28cbf40b5cd78f2011eb
+2025-03-31 20:50:21,737 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T6784-V9809_205021.csv
+2025-03-31 20:50:21,738 - DEBUG - SHA-256 hash of saved CSV file: a69a5c21793d3734a1bc649ac511dd11d9c31916db4a7df2e12669f4488f84fc
+2025-03-31 20:50:26,056 - DEBUG - handle_msg[b12052f28c334022bd34b31e3110e2f0]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 50, 26, 54000, tzinfo=tzutc()), 'msg_id': '3672684e-6223-4826-bebe-5f35189aa4d8', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '3672684e-6223-4826-bebe-5f35189aa4d8', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'b12052f28c334022bd34b31e3110e2f0', 'data': {'method': 'update', 'state': {'index': 2}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:50:35,768 - DEBUG - handle_msg[155339d376f54a5691b9e469dd0b3dea]({'header': {'date': datetime.datetime(2025, 3, 31, 23, 50, 35, 767000, tzinfo=tzutc()), 'msg_id': '69ce2603-6454-4e78-9426-9fadcf54bb66', 'msg_type': 'comm_msg', 'session': '13afe83e-7068-4641-85fa-a71ea6d3643c', 'username': 'e4c0365a-2cff-4e74-8cb2-8aacfea6288e', 'version': '5.2'}, 'msg_id': '69ce2603-6454-4e78-9426-9fadcf54bb66', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '155339d376f54a5691b9e469dd0b3dea', 'data': {'method': 'update', 'state': {'index': [0]}, 'buffer_paths': []}}, 'buffers': []})
+2025-03-31 20:50:37,142 - INFO - Requesting data for: IPCA Montly Variation (Seasonally Adjusted) - From Jan/1998 118-306
+2025-03-31 20:50:37,143 - DEBUG - URL: https://apisidra.ibge.gov.br/values/t/118/v/306/p/all/N1/1
+2025-03-31 20:50:37,143 - DEBUG - Starting new HTTPS connection (1): apisidra.ibge.gov.br:443
+2025-03-31 20:50:39,502 - DEBUG - https://apisidra.ibge.gov.br:443 "GET /values/t/118/v/306/p/all/N1/1 HTTP/1.1" 200 85287
+2025-03-31 20:50:39,553 - INFO - JSON file saved: ../data/raw/IBGE_20250331_183405_T118-V306_205037.json
+2025-03-31 20:50:39,554 - DEBUG - SSHA-256 hash of saved JSON file: 07809e4b305be19e0b84a00b54c596c3db83391319af0bfcc9909656d3163057
+2025-03-31 20:50:39,556 - INFO - CSV file saved: ../data/raw/IBGE_20250331_183405_T118-V306_205037.csv
+2025-03-31 20:50:39,556 - DEBUG - SHA-256 hash of saved CSV file: 5d36ff8fda4cd01741f57acaf506076102b0dcc63f382d36217269794ac5eccd
