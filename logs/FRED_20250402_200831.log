@@ -1,0 +1,13 @@
+2025-04-02 20:08:31,007 - INFO - Logger started. File path: ../logs/FRED_20250402_200831.log
+2025-04-02 20:08:32,426 - INFO - Requesting data for: US_GDP_Implicit_Price_Deflator
+2025-04-02 20:08:32,427 - DEBUG - URL: https://api.stlouisfed.org/fred/series/observations?series_id=A191RI1Q225SBEA&observation_start=2000-01-01&observation_end=2024-12-31&api_key=17128e811ca73b09e26648edf17ef877&file_type=json
+2025-04-02 20:08:32,427 - DEBUG - Starting new HTTPS connection (1): api.stlouisfed.org:443
+2025-04-02 20:08:32,972 - DEBUG - https://api.stlouisfed.org:443 "GET /fred/series/observations?series_id=A191RI1Q225SBEA&observation_start=2000-01-01&observation_end=2024-12-31&api_key=17128e811ca73b09e26648edf17ef877&file_type=json HTTP/1.1" 200 1013
+2025-04-02 20:08:32,973 - INFO - JSON file saved: ../data/raw/FRED_20250402_200831_SA191RI1Q225SBEA_200832.json
+2025-04-02 20:08:32,974 - DEBUG - SHA-256 hash of saved JSON file: 973bdc195f58eb2da5202a4fba313703bbf83ce3f64b675f4cf7d1fe69eae280
+2025-04-02 20:08:32,974 - INFO - Requesting data for: US_GDP_Implicit_Price_Deflator
+2025-04-02 20:08:32,974 - DEBUG - URL: https://api.stlouisfed.org/fred/series/observations?series_id=A191RI1Q225SBEA&observation_start=2000-01-01&observation_end=2024-12-31&api_key=17128e811ca73b09e26648edf17ef877&file_type=xml
+2025-04-02 20:08:32,974 - DEBUG - Starting new HTTPS connection (1): api.stlouisfed.org:443
+2025-04-02 20:08:33,178 - DEBUG - https://api.stlouisfed.org:443 "GET /fred/series/observations?series_id=A191RI1Q225SBEA&observation_start=2000-01-01&observation_end=2024-12-31&api_key=17128e811ca73b09e26648edf17ef877&file_type=xml HTTP/1.1" 200 1057
+2025-04-02 20:08:33,178 - INFO - XML file saved: ../data/raw/FRED_20250402_200831_SA191RI1Q225SBEA_200832.xml
+2025-04-02 20:08:33,178 - DEBUG - SHA-256 hash of saved XML file: d7ff6e5d8008eedcde34ef7b3916f0055499b0d5b239586da8945ac034045f1e

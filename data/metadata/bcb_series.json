@@ -1,4 +1,9 @@
 [
+  {
+    "name": "Taxa de câmbio - Livre - Dólar americano (venda) - diário",
+    "Descrição": "Taxa de juros que representa a taxa média ajustada das operações compromissadas com prazo de um dia útil lastreadas com títulos públicos federais custodiados no Sistema Especial de Liquidação e de Custódia (Selic). Divulgação em % a.d.",
+    "code": 1
+  },  
     {
       "name": "Selic",
       "Descrição": "Taxa de juros que representa a taxa média ajustada das operações compromissadas com prazo de um dia útil lastreadas com títulos públicos federais custodiados no Sistema Especial de Liquidação e de Custódia (Selic). Divulgação em % a.d.",

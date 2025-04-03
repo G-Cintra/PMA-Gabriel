@@ -8,6 +8,27 @@ def compute_file_hash(filepath):
             hasher.update(chunk)
     return hasher.hexdigest()
 
+def get_api_key(file_path='../secrets/fred_api_key.txt'):
+    """
+    Load the API key from a file, or ask the user to input and save it.
+    
+    Args:
+        file_path (str): Path to the file storing the API key.
+        
+    Returns:
+        str: The API key.
+    """
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
+            return f.read().strip()
+    else:
+        api_key = input("Enter your API key: ").strip()
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, 'w') as f:
+            f.write(api_key)
+        print(f"API key saved to {file_path}. Make sure it's in .gitignore!")
+        return api_key
+
 
 import os
 import re
