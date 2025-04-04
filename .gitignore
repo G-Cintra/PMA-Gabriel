@@ -1,4 +1,5 @@
-.venv
+.venv/
+secrets/
 #*.csv
 #*.log
 #IBGE*.json
