@@ -103,7 +103,6 @@ def file_explorer(df_series_metadata ):
         nonlocal file_dropdown, file_map
         # Try to look up the name using table and variable
 
-
         with result_output:
             clear_output()
             file_selector_container.children = []  # Reset
@@ -165,7 +164,6 @@ def file_explorer(df_series_metadata ):
             )
             # Define plot function
             def plot_selected_file(change):
-
                 with file_plot_output:
                     clear_output()
                     selected_label = change["new"]
@@ -198,11 +196,13 @@ def file_explorer(df_series_metadata ):
             # Now register observer AFTER triggering initial plot
             file_dropdown.observe(plot_selected_file, names="value")
 
-            plot_selected_file({"new": file_dropdown.value})
-
             # Add widgets to UI
             file_selector_container.children = [file_dropdown, file_plot_output]
             display(file_selector_container)
+            
+            # Trigger initial plot
+            if file_dropdown.value:
+                plot_selected_file({"new": file_dropdown.value})
             
     # Attach logic
     source_selector.observe(update_tv_options, names="value")
@@ -221,7 +221,6 @@ def file_explorer(df_series_metadata ):
         series_name_label,   
         filename_label, 
         result_output,
-
     ]))
 
     return {

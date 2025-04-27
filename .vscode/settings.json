@@ -1,0 +1,27 @@
+{
+    "markdown.marp.themes": [
+        "./style/arendt.css",
+        "./style/copernico.css",
+        "./style/descartes.css",
+        "./style/einstein.css",
+        "./style/freud.css",
+        "./style/godel.css",
+        "./style/hegel.css",
+        "./style/heidegger.css",
+        "./style/hume.css",
+        "./style/husserls.css",
+        "./style/jobs.css",
+        "./style/kant.css",
+        "./style/king.css",
+        "./style/leibniz.css",
+        "./style/orwell.css",
+        "./style/pascal.css",
+        "./style/plato.css",
+        "./style/schema.css",
+        "./style/simple.css",
+        "./style/socrates.css",
+        "./style/structure.css",
+        "./style/turing.css",
+        "./style/weber.css",
+    ]
+}

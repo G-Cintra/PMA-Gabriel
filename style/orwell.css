@@ -1,0 +1,141 @@
+/* @theme orwell */
+
+/*
+  ============================================
+    Created by Paulo Cunha
+    version: 1.0
+    last update: 01.mar.2024
+  ============================================       
+*/
+
+/* Importing COLOR SCHEMA */
+
+@import "default";
+@import "schema";
+@import "structure";
+
+/* Importing Font */
+/* Font Credit: htts://https://www.cdnfonts.com/ */
+@import url('https://fonts.cdnfonts.com/css/fira-sans-condensed?styles=19730');
+
+
+/* -------------------- ROOT -------------------------------*/
+:root {
+  
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: initial;
+  
+  /* Default Colors */
+  
+  /* 
+  --default-font-color: #f1f1f5; 
+  --default-font-color: #beccf1;  
+  
+  --default-background-color: #858e96;
+  --default-background-color: #d2d3d2;
+  --default-background-color: #122e57; 
+  --default-background-color: #1b2f5c;
+  --default-background-color: #2d4458;
+  --default-background-color: #606164;
+  --default-background-color: #1b1c1d;
+  */
+
+  --default-font-color: #a9b6db; 
+  --default-background-color: #00173f;
+
+  /* Italic */
+  --italic-color              : #ffffff;
+  --italic-background-color   : #ee0909;
+
+  /* Bold  */
+  --bold-color                : #fa5401;
+   
+  /* Cool-List */
+  --cool-list-color           : rgb(233, 11, 96);
+
+  --h1-color                  : rgb(113, 124, 245);
+
+
+  background-color: var(--default-background-color);
+  color: var(--default-font-color);
+
+}
+
+h1 {
+  color: var(--h1-color);
+}
+
+strong {
+  color: #e6ba1c !important;
+}
+
+section.titlepage .title {
+  border-bottom: 1px solid orangered;
+}
+
+section.cite {
+  --strong-color        : rgba(255, 5, 5, 0.795);
+}
+
+section.titlepage .author,
+section.titlepage .date,
+section.titlepage .organization {
+  text-align: left;
+}
+
+strong {
+
+  padding-left: 2px;
+  padding-right: 2px;
+  font-weight: 600;
+}
+
+/* -------------------- TRANSITION -------------------------------*/
+
+section.transition em {
+
+  /* color: rgb(10, 100, 235); */
+  background-color: rgba(255, 5, 5, 0.295);
+
+}
+
+section.transition strong {
+
+  color: rgb(255, 5, 5);
+
+}
+
+section.transition {
+
+  background-color: rgb(255, 145, 0);
+  background-color: orange;
+
+}
+
+/* -------------------- TRANSITION2 -------------------------------*/
+
+section.transition2 strong {
+
+  color: rgb(10, 100, 235);
+  color: rgb(161, 240, 3);
+
+}
+
+/* -------------------- BIBLIO -------------------------------*/
+
+section.biblio {
+
+  /* font-family: "Fira Sans", serif;  */
+
+   
+  --text-color              : #000000;
+  --biblio-background-color : #dde0e3;
+  --border-color            : #1573ff;
+  --bold-color              : #1749b4;
+}
+
+section.biblio p {
+
+  font-family: "Fira Sans Condensed", serif; 
+
+}
