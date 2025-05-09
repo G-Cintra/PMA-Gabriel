@@ -68,4 +68,12 @@
     "geography": "1",
     "frequency": "monthly"
   }  
+  {
+    "name": "Unemployment 4099-4099",
+    "table": 4099,
+    "variable": 4099,
+    "period": "all",
+    "geography": "1",
+    "frequency": "quarterly"
+  }  
 ]
