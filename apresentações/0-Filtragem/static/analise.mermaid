@@ -1,0 +1,23 @@
+graph TD;
+    B["Identificação do Processo"]
+    C["Definição de entradas e saídas"]
+    D["Simplificação e Abstração"]
+    E["Representação Matemática"]
+    
+    G["Resolução do modelo"]
+    I["Interpretação dos resultados"]
+    
+    subgraph Realidade["Análise da Realidade"]
+    direction LR
+        B --> C
+    end
+    Realidade --> Modelagem
+    subgraph Modelagem
+    direction LR
+        D --> E
+    end
+    Modelagem --> Análise
+    subgraph Análise["Análise Matemática"]
+    direction LR
+        G --> I
+    end

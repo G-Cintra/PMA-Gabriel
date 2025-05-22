@@ -1,0 +1,48 @@
+%%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
+graph LR;
+
+    Entrada1["Entrada 1"]
+    Entrada2["Entrada 2"]
+    Entrada3["Entrada 3"]
+    Entrada4["Entrada 4"]
+    Entrada5["Entrada 5"]
+
+    PROCESSO1["Processo 1"]
+    PROCESSO2["Processo 2"]
+    PROCESSO3["Processo 3"]
+    PROCESSO4["Processo 4"]
+
+    Saída1["Saída 1"]
+    Saída2["Saída 2"]
+
+    Sistema:::white
+
+    subgraph Sistema[Sistema]
+    direction LR
+    subgraph Processo 1
+    Entrada1:::white --> PROCESSO1:::black
+    Entrada2:::white --> PROCESSO1:::black
+    Entrada3:::white --> PROCESSO1:::black
+    end
+
+    subgraph Processo 2
+    PROCESSO1:::black --> PROCESSO2:::black
+    end
+
+    subgraph Processo 3
+    PROCESSO2:::black --> PROCESSO3:::black  
+    PROCESSO3:::black --> Saída2:::white
+    PROCESSO1:::black --> PROCESSO3:::black
+    Entrada4:::white --> PROCESSO3:::black
+    end
+
+    subgraph Processo 4
+    PROCESSO1:::black --> PROCESSO4:::black
+    PROCESSO4:::black --> Saída1:::white
+    Entrada5:::white --> PROCESSO4:::black
+    end
+    
+    end
+    classDef white fill:#FFFFFF, color:#000000, stroke:#000000
+    classDef black fill:orange, color:#FFFFFF, stroke:#000000
+
