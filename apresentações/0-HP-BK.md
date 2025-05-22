@@ -58,8 +58,8 @@ theme       : godel
       
 <!-- _class: cool-list -->
 
-1. _Filtro HP2_
-2. _Filtro HP1_
+1. _Filtro HP One and Two-Sided_
+2. _Rudimentos de Análise Espectral_
 3. _Filtro BK_
 
 </div>  
