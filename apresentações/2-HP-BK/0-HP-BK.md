@@ -332,6 +332,82 @@ $
 
 ---
 
+For the empirical applications in this paper, we adopt the
+definition of business cycles suggested by the procedures
+and findings of NBER researchers like Burns and Mitchell.
+Burns and Mitchell specified that business cycles were
+cyclical components of no less than six quarters (eighteen
+months) in duration, and they found that U.S. business
+cycles typically last fewer than 32 quarters (eight years). We
+adopt these limits as our definition of the business cycle. We
+apply our method to several major quarterly postwar U.S.
+time series, including output and inflation.
+
+---
+
+Defining the business cycle as fluctuations with a speci-
+fied range of periodicities results in a particular two-sided
+moving average (a linear filter). In the particular case of the
+NBER definition of the business cycle, the desired filter is a
+band-pass filter, i.e., a filter that passes through components
+of the time series with periodic fluctuations between six and
+32 quarters, while removing components at higher and lower
+frequencies. However, the exact band-pass filter is a moving
+average of infinite order, so an approximation is necessary
+for practical applications. Thus, a central problem addressed
+by this paper is how to construct a good approximation to the
+optimal filter (i.e., the filter that accomplishes the business-
+cycle decomposition specified by the researcher)
+
+---
+
+In approaching this problem of filter design, we require
+that our method meet six objectives. 3 First, as suggested
+above, the filter should extract a specified range of periodici-
+ties and otherwise leave the properties of this extracted
+component unaffected. Second, we require that the ideal
+band-pass filter should not introduce phase shift, i.e., that it
+not alter the timing relationships between series at any
+frequency. These two objectives define an ideal moving
+average of the data with symmetric weights on leads and
+lags. Third, we require that our method be an optimal
+approximation to the ideal band-pass filter; we specify a
+particular quadratic loss function for discrepancies between
+
+---
+
+the exact and approximate filter. Fourth, we require that the
+application of an approximate band-pass must result in a
+stationary time series even when applied to trending data.
+Given the large body of empirical work that suggests the
+presence of stochastic trends in economic time series, we
+design our filters so that they will make the filtered time
+series stationary if the underlying time series is integrated of
+order one or two. (Equivalently, we impose the requirement
+that the approximate filter’s frequency response is exactly
+zero at the zero frequency). This requirement also means
+that our band-pass filters will eliminate quadratic determinis-
+tic trends from a time series. Fifth, we require that the
+method yield business-cycle components that are unrelated
+to the length of the sample period. Technically, this means
+that the moving averages we construct are time invariant, in
+that the coefficients do not depend on the point in the
+sample. Sixth, and finally, we require that our method be
+operational. In the general filter-approximation problem,
+there is an important tradeoff involved: The ideal band-pass
+filter can be better approximated with the longer moving
+averages, but adding more leads and lags also means that
+observations must be dropped at the beginning and end of
+the sample, thus leaving fewer for analysis. We therefore
+experiment extensively with the application of our filter to
+macroeconomic time series and provide some guidance to
+readers about the tradeoffs involved. We recommend that research-
+ers use moving averages based on three years of past data and
+three years of future data, as well as the current observation,
+when working with both quarterly and annual time series.
+
+---
+
 # Outros
 
 ### Frequencia
